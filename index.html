@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="assets/css/estilos.css" />
+	</head>
+
+	<body>
+		<nav>
+			<section>
+				<div>
+					<p>Cantidad de cuartos:</p>
+					<input
+						id="rooms"
+						min="0"
+						class="form-control w-50 m-auto"
+						type="number"
+					/>
+				</div>
+				<div>
+					<span>Metros cuadrados </span>
+					<div class="d-flex">
+						<div class="me-4">
+							<p>desde:</p>
+							<input
+								id="sizeIn"
+								min="0"
+								class="form-control"
+								type="number"
+							/>
+						</div>
+						<div>
+							<p>hasta:</p>
+							<input
+								id="sizeOut"
+								min="0"
+								class="form-control"
+								type="number"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<button id="btn" class="btn btn-warning">Buscar</button>
+		</nav>
+		<div>
+			<h4 class="py-3">Total: <span id="totalSrc">0</span></h4>
+			<section id="propiedades"></section>
+		</div>
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
